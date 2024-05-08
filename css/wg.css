@@ -55,11 +55,11 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    'Liberation Mono', 'Courier New', monospace;
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
@@ -169,26 +169,26 @@ button {
   text-transform: none;
 }
 
-[role="button"] {
+[role='button'] {
   cursor: pointer;
 }
 
-[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not(
-    [type="week"]
-  ):not([type="time"])::-webkit-calendar-picker-indicator {
+[list]:not([type='date']):not([type='datetime-local']):not([type='month']):not(
+    [type='week']
+  ):not([type='time'])::-webkit-calendar-picker-indicator {
   display: none !important;
 }
 
-[type="button"],
-[type="reset"],
-[type="submit"],
+[type='button'],
+[type='reset'],
+[type='submit'],
 button {
   -webkit-appearance: button;
 }
 
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled),
+[type='button']:not(:disabled),
+[type='reset']:not(:disabled),
+[type='submit']:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
 }
@@ -212,7 +212,7 @@ button:not(:disabled) {
   height: auto;
 }
 
-[type="search"] {
+[type='search'] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
 }
@@ -1073,17 +1073,13 @@ body {
 }
 
 .page-section {
-  padding: 3rem 0;
-  margin-bottom: 5rem;
 }
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
   }
 
   .page-section {
-    padding: 1rem 0;
     /* margin-bottom: 10rem */
   }
 }
@@ -1097,16 +1093,16 @@ body {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   text-transform: uppercase;
   font-weight: 700;
   margin-left: auto;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 0.95rem;
   color: #000;
   letter-spacing: 0.0625em;
@@ -1143,7 +1139,7 @@ body {
 
 header.masthead {
   padding-top: 5.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5.5rem;
   text-align: center;
   width: 100%;
 }
@@ -1159,7 +1155,7 @@ footer.foothead .foothead-heading {
   font-weight: 100;
   line-height: 1.8rem;
   margin-bottom: 3rem;
-  font-family: "Spectral";
+  font-family: 'Spectral';
   color: #717171;
   text-align: left;
   margin: 0 auto;
@@ -1170,14 +1166,13 @@ footer.foothead .foothead-heading {
 }
 
 header.masthead .masthead-subheading {
-  font-size: 1.2rem;
-
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-  font-family: "Spectral";
-  color: #000;
+  font-size: 36px;
+  line-height: 124%;
+  font-family: 'Spectral';
+  color: #515151;
   text-align: left;
-  margin-top: 10rem;
+  margin-top: 3rem;
+  letter-spacing: -1px;
 }
 
 .background img {
@@ -1194,27 +1189,33 @@ header.masthead .masthead-subheading {
   text-align: left;
   width: 50%;
   margin-top: 5rem;
+  margin-bottom: 1rem;
   justify-items: left;
+}
+.heading-grid div:nth-child(4) {
+  width: 12rem;
 }
 
 .masthead-heading.item1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 1.8rem;
+  line-height: 153.3%;
   margin-bottom: 1rem;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   color: black;
   text-align: left;
 }
 
 .masthead-heading.item2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 50px;
-  line-height: 1.8rem;
+  line-height: 153.3%;
   margin-bottom: 1rem;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   color: #878787;
   text-align: left;
+  width: 15rem;
+  margin-right: 52px;
 }
 
 .body-grid {
@@ -1226,39 +1227,39 @@ header.masthead .masthead-subheading {
 }
 
 .body-heading.item1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.8rem;
   margin-bottom: 4rem;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
+  letter-spacing: -1px;
   color: black;
   text-align: left;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .body-heading.item2 {
-  font-size: 1.1rem;
-  font-weight: 50px;
-  line-height: 1.8rem;
-  margin-bottom: 3rem;
-  font-family: "DM Sans";
-  color: #7b7b7b;
+  font-size: 1rem;
+  line-height: 153.3%;
+  margin-bottom: 4rem;
+  font-family: 'DM Sans';
+  color: #616161;
   text-align: left;
 }
 
 .body-heading.item2 > ul {
-  font-size: 1.8rem;
-  font-weight: 50px;
-  line-height: 2.8rem;
+  font-size: 36px;
+  line-height: 124%;
   margin-bottom: 3rem;
-  font-family: "Spectral";
-  color: black;
+  font-family: 'Spectral';
+  color: #515151;
   text-align: left;
+  letter-spacing: -1px;
 }
 
 .approach {
   background-color: #dce2ec;
-  padding-bottom: 5rem;
+  padding-bottom: 88px;
 }
 
 .approach-grid {
@@ -1271,11 +1272,11 @@ header.masthead .masthead-subheading {
 }
 
 .approach-item1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 1.8rem;
+  letter-spacing: -1px;
 
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   color: black;
   text-align: left;
   margin-top: 4rem;
@@ -1285,61 +1286,57 @@ header.masthead .masthead-subheading {
 }
 
 .approach-item2 {
-  font-size: 1.2rem;
-
-  line-height: 2rem;
-
-  font-family: "DM Sans";
-  color: #616161;
+  font-size: 1rem;
+  line-height: 153.3%;
+  font-family: 'DM Sans';
+  color: #515151;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 10px;
   grid-column: 2 / 2;
   grid-row: 2 / 3;
 }
 
 .approach-item3 {
-  font-size: 1.5rem;
-
-  line-height: 1.5rem;
-
-  font-family: "Spectral";
-  color: #616161;
+  font-size: 25px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  font-family: 'Spectral';
+  color: #525252;
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 1rem;
   grid-column: 1/2;
   grid-row: 2 / 5;
   margin-left: 10rem;
 }
 
 .approach-item4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 1.8rem;
+  letter-spacing: -1px;
 
-  font-family: "DM Sans";
-  color: black;
+  font-family: 'DM Sans';
+  color: #1f1f1f;
   text-align: left;
-  margin-top: 4rem;
+  margin-top: 115px;
   grid-column: 2 / 4;
   grid-row: 3 / 3;
 }
 
-.approach-item5{
-    width: 20rem;
-    grid-column: 1 / 4;
-  grid-row: 4 / 4;
-  margin-left: 10rem;
+.approach-item5 {
+  width: 25rem;
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  margin-left: 200px;
+  margin-bottom: 50px;
 }
 
-.circles{
-    width: 100%;
+.circles {
+  width: 100%;
 }
 .approach-item6 {
-  font-size: 1.2rem;
-
-  line-height: 2rem;
-
-  font-family: "DM Sans";
+  font-size: 1rem;
+  line-height: 153.3%;
+  font-family: 'DM Sans';
   color: #616161;
   text-align: left;
   margin-top: 5rem;
@@ -1348,15 +1345,20 @@ header.masthead .masthead-subheading {
 }
 
 .c-line {
-  border: solid 1px #97a8c6;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  border: solid 1px #cdd5e4;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .persona {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+.sitemap {
+  padding-bottom: 88px;
 }
 
 .sitemap-grid,
@@ -1367,7 +1369,7 @@ header.masthead .masthead-subheading {
   grid-template-columns: repeat(2, 1fr);
   text-align: left;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 88px;
   justify-items: left;
   margin-bottom: 5rem;
 }
@@ -1376,12 +1378,12 @@ header.masthead .masthead-subheading {
 .wireframe-item1,
 .user-testing-item1,
 .final-design-item1 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 500;
   line-height: 1.8rem;
-
-  font-family: "Spectral";
-  color: #515151;
+  margin-top: 88px;
+  font-family: 'Spectral';
+  color: #525252;
   text-align: center;
   margin-left: 10rem;
 }
@@ -1390,12 +1392,22 @@ header.masthead .masthead-subheading {
 .wireframe-item2,
 .user-testing-item2,
 .final-design-item2 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-family: "DM Sans";
-  color: #616161;
+  font-size: 1rem;
+  line-height: 153.3%;
+  margin-top: 88px;
+  font-family: 'DM Sans';
+  color: #525252;
   text-align: left;
   max-width: 80%;
+}
+
+.final-design-item2 div:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.user-testing-item1,
+.user-testing-item2 {
+  margin-top: 0;
 }
 
 .user-flow,
@@ -1415,15 +1427,7 @@ header.masthead .masthead-subheading {
 .wireframe,
 .final-design {
   background-color: #dce2ec;
-  margin-top: 1rem;
-  padding-bottom: 5rem;
-}
-
-.wireframe-item1,
-.wireframe-item2,
-.final-design-item1,
-.final-design-item2 {
-  margin-top: 6rem;
+  padding-bottom: 88px;
 }
 
 .sketch {
@@ -1441,12 +1445,13 @@ header.masthead .masthead-subheading {
 }
 
 .prototype-item1 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 500;
   line-height: 1.8rem;
-
-  font-family: "Spectral";
-  color: #515151;
+  letter-spacing: -1px;
+  margin-top: 88px;
+  font-family: 'Spectral';
+  color: #525252;
   text-align: left;
   margin-left: 10rem;
 }
@@ -1464,20 +1469,20 @@ header.masthead .masthead-subheading {
 }
 
 .prototype-item3 {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 500;
   line-height: 1.8rem;
-
-  font-family: "Spectral";
-  color: #515151;
+  letter-spacing: -1px;
+  font-family: 'Spectral';
+  color: #525252;
   text-align: left;
   margin-left: 10rem;
 }
 
 .prototype-item4 {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-family: "DM Sans";
+  font-size: 1rem;
+  line-height: 153.3%;
+  font-family: 'DM Sans';
   color: #616161;
   text-align: left;
   max-width: 80%;
@@ -1499,13 +1504,13 @@ footer.foothead {
 .next-grid {
   display: grid;
 
-  width: 24rem;
+  width: 25rem;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
 }
 
 .next-item1 {
-  font-family: "Spectral";
+  font-family: 'Spectral';
   color: #9f9f9f;
   font-size: 1.3rem;
   font-weight: bold;
@@ -1515,7 +1520,7 @@ footer.foothead {
 }
 
 .next-item2 {
-  font-family: "Spectral";
+  font-family: 'Spectral';
   color: #9f9f9f;
   font-size: 0.7rem;
   grid-column: 1;
@@ -1546,15 +1551,6 @@ footer.foothead {
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-  }
-
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-
-    line-height: 3rem;
-  }
-
   .container {
     width: 100%;
     margin: 0 auto;
@@ -1574,6 +1570,16 @@ footer.foothead {
   .img-fluid {
     max-width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 1440px) {
+  .approach-item2 {
+    font-size: 16px;
+  }
+
+  .approach-item5 {
+    margin-left: 100px;
   }
 }
 
