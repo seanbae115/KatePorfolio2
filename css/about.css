@@ -274,7 +274,7 @@ button:not(:disabled) {
   .container,
   .container-lg,
   .container-xl {
-    max-width: 1520px;
+    max-width: 1800px;
   }
 }
 
