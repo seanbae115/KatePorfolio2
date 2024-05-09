@@ -1469,6 +1469,7 @@ header.masthead .masthead-subheading {
 .prototype-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10rem;
 }
 
 .prototype-item1 {
