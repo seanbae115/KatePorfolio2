@@ -10,6 +10,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   var navList = document.querySelectorAll('.nav-link'),
     _url = location.href.split('/').slice(-1).toString(),
+    _href = location.href,
     _currentNav,
     // Navbar shrink function
     navbarShrink = function () {
@@ -24,7 +25,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       }
     };
 
-    if(_url.match(/index/)){
+    if(_href=='https://seanbae115.github.io/KatePorfolio2/' || _href=='https://seanbae115.github.io/KatePorfolio2/#wg'){
         _currentNav = '#homeNav';
     } else if(_url.match(/pattern/)){
         _currentNav = '#patternNav';
