@@ -1288,8 +1288,10 @@ header.masthead {
 }
 
 .approach-item4 {
-  font-size: 1.5rem;
-  line-height: 170.3%;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: -1px;
+  font-weight: 500;
   font-family: 'Spectral';
   color: #7b7b7b;
   text-align: left;
@@ -1311,7 +1313,7 @@ header.masthead {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.8rem;
-  font-family: 'DM Sans';
+  font-family: 'Spectral';
   color: #1f1f1f;
   text-align: left;
   grid-column: 1/2;
@@ -1342,8 +1344,8 @@ header.masthead {
   color: #1f1f1f;
 }
 .content {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 18px;
+  margin-top: 40px;
   line-height: 153.3%;
   letter-spacing: -0.5px;
   font-family: 'DM Sans';
@@ -1384,6 +1386,7 @@ header.masthead {
   text-align: center;
   justify-items: center;
   padding-right: 12rem;
+  padding-top: 4rem !important;
 }
 
 .solution-item1 {
@@ -1432,7 +1435,7 @@ header.masthead {
 }
 
 .solution-grid2-item1 img {
-  margin-top: 62px;
+  margin-top: 35px;
 }
 
 .solution-grid2-item2 {
@@ -1568,7 +1571,7 @@ header.masthead {
   font-size: 22px;
   letter-spacing: 0.3px;
   left: 23px;
-  top: 160px;
+  top: 135px;
   color: #f2f2f2;
 }
 .solution-grid2-item3 .img-text {
@@ -1589,15 +1592,37 @@ header.masthead {
   margin-bottom: 88px;
 }
 
+.button-box .solution-grid2-item1 img:nth-child(3) {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 .button-box .solution-grid2-item1 div {
   font-size: 18px;
   font-family: 'DM Sans';
   line-height: 126%;
   color: #616161;
+  font-weight: 400;
+}
+
+.solution-grid2-item3 img:nth-child(2){
+  margin-top: 20px;
+}
+
+.solution-grid2-item1 img:nth-child(5) {
+  margin-top: 15px;
+}
+
+.button-box .solution-grid2-item1 div:nth-child(6){
+  margin-top: 40px;
 }
 
 .button-box .solution-grid2-item3 img:nth-child(2n + 4) {
   margin-top: 2px;
+}
+
+.button-box .arrow {
+  padding-bottom: 50px;
 }
 
 .usability-item2 div:nth-child(1) {
@@ -1695,6 +1720,10 @@ footer.foothead {
   text-decoration: underline;
 }
 
+#new, #old{
+  letter-spacing: 0;
+}
+
 @media (min-width: 768px) {
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -1718,7 +1747,7 @@ footer.foothead {
   .approach-item2,
   .usability-item2,
   .take-away-item2 {
-    font-size: 1rem;
+    font-size: 15px;
   }
   .heading-grid,
   .approach-grid,
@@ -1750,7 +1779,7 @@ footer.foothead {
     width: 81%;
   }
   .column-wrapper {
-    width: 80%;
+    width: 87%;
   }
 
   .usability-item2,
