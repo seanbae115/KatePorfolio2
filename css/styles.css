@@ -1102,10 +1102,10 @@ body {
   header.masthead {
     margin-bottom: 130px;
   }
-  .page-section > div > div > div {
+  .page-section > a > div > div {
     padding-top: 130px;
   }
-  .page-section > div {
+  .page-section > a {
     padding-bottom: 130px;
   }
 }
@@ -1181,6 +1181,9 @@ header.masthead {
   color: #1f1f1f;
   text-align: left;
 }
+.masthead-subheading img:nth-child(2) {
+  margin-bottom: 10px;
+}
 .logo {
   width: 200px;
   transform: rotate(30.87deg);
@@ -1215,17 +1218,20 @@ header.masthead {
   width: 5%;
 }
 
-.wg {
+.page-section .wg {
   background-color: #a7b3d1;
   width: 100%;
+  display: block;
 }
-.torrid {
+.page-section .torrid {
   background-color: #c4b4b4;
   width: 100%;
+  display: block;
 }
-.insomnia {
+.page-section .insomnia {
   background-color: #e5a5a5;
   width: 100%;
+  display: block;
 }
 .heading-grid,
 .wg-grid,
@@ -1299,7 +1305,13 @@ header.masthead {
   width: 100px;
   height: 100px;
 }
+a {
+  text-decoration: none;
+}
 
+.insomnia-item2 img {
+  height: 30rem;
+}
 @media (max-width: 768px) {
   .heading-grid,
   .wg-grid,
@@ -1359,18 +1371,18 @@ header.masthead {
 
 @media (max-width: 1750px) {
   .wg-item2 {
-    top: -160px;
-    right: -100px;
-    width: 55rem;
+    top: -185px;
+    right: -75px;
+    width: 242%;
   }
   .torrid-item2 {
-    top: -270px;
-    right: -30px;
-    width: 46rem;
+    top: -231px;
+    right: 45px;
+    width: 41rem;
   }
   .insomnia-item2 {
-    top: -145px;
+    top: -143px;
     right: -72px;
-    width: 49rem;
+    width: 190%;
   }
 }
