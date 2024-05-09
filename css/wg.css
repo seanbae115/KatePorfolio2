@@ -132,10 +132,9 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
+/* a:hover {
   color: var(--bs-link-hover-color);
-}
-
+} */
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   color: inherit;
@@ -464,10 +463,10 @@ button:not(:disabled) {
   }
 }
 
-.nav-link:focus,
+/* .nav-link:focus,
 .nav-link:hover {
   color: var(--bs-nav-link-hover-color);
-}
+} */
 
 .navbar {
   --bs-navbar-padding-x: 0;
@@ -527,11 +526,11 @@ button:not(:disabled) {
   color: var(--bs-navbar-color);
 }
 
-.navbar-text a,
+/* .navbar-text a,
 .navbar-text a:focus,
 .navbar-text a:hover {
   color: var(--bs-navbar-active-color);
-}
+} */
 
 .navbar-collapse {
   flex-basis: 100%;
@@ -1088,6 +1087,7 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #fff;
+  padding-right: 10rem;
 }
 
 #mainNav .navbar-toggler {
@@ -1102,14 +1102,28 @@ body {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: 'DM Sans';
-  font-size: 0.95rem;
-  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: #1f1f1f;
   letter-spacing: 0.0625em;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  text-decoration: underline;
+}
+#mainFooter .container .footer-wrapper .left-btn:hover,
+#mainFooter .container .footer-wrapper .right-btn:hover {
+  background-color: #000000;
+  text-decoration: white;
+}
+.left-btn:hover .btn-text,
+.right-btn:hover .btn-text,
+.left-btn:hover .btn-text span,
+.right-btn:hover .btn-text span {
+  color: white;
+}
+.onsite {
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
@@ -1155,7 +1169,7 @@ footer.foothead .foothead-heading {
   font-weight: 100;
   line-height: 1.8rem;
   margin-bottom: 3rem;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #717171;
   text-align: left;
   margin: 0 auto;
@@ -1168,11 +1182,12 @@ footer.foothead .foothead-heading {
 header.masthead .masthead-subheading {
   font-size: 36px;
   line-height: 124%;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #515151;
   text-align: left;
   margin-top: 3rem;
   letter-spacing: -1px;
+  margin-left: 10rem;
 }
 
 .background img {
@@ -1191,6 +1206,7 @@ header.masthead .masthead-subheading {
   margin-top: 5rem;
   margin-bottom: 1rem;
   justify-items: left;
+  margin-left: 10rem;
 }
 .heading-grid div:nth-child(4) {
   width: 12rem;
@@ -1201,7 +1217,7 @@ header.masthead .masthead-subheading {
   font-weight: bold;
   line-height: 153.3%;
   margin-bottom: 1rem;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: black;
   text-align: left;
 }
@@ -1211,7 +1227,7 @@ header.masthead .masthead-subheading {
   font-weight: 50px;
   line-height: 153.3%;
   margin-bottom: 1rem;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #878787;
   text-align: left;
   width: 15rem;
@@ -1231,7 +1247,7 @@ header.masthead .masthead-subheading {
   font-weight: bold;
   line-height: 1.8rem;
   margin-bottom: 4rem;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   letter-spacing: -1px;
   color: black;
   text-align: left;
@@ -1242,7 +1258,7 @@ header.masthead .masthead-subheading {
   font-size: 1rem;
   line-height: 153.3%;
   margin-bottom: 4rem;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #616161;
   text-align: left;
 }
@@ -1251,10 +1267,10 @@ header.masthead .masthead-subheading {
   font-size: 36px;
   line-height: 124%;
   margin-bottom: 3rem;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #515151;
   text-align: left;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 
 .approach {
@@ -1276,7 +1292,7 @@ header.masthead .masthead-subheading {
   font-weight: bold;
   letter-spacing: -1px;
 
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: black;
   text-align: left;
   margin-top: 4rem;
@@ -1288,7 +1304,7 @@ header.masthead .masthead-subheading {
 .approach-item2 {
   font-size: 1rem;
   line-height: 153.3%;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #515151;
   text-align: left;
   margin-top: 10px;
@@ -1300,7 +1316,7 @@ header.masthead .masthead-subheading {
   font-size: 25px;
   letter-spacing: -1px;
   font-weight: 500;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #525252;
   text-align: left;
   margin-top: 1rem;
@@ -1314,7 +1330,7 @@ header.masthead .masthead-subheading {
   font-weight: bold;
   letter-spacing: -1px;
 
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #1f1f1f;
   text-align: left;
   margin-top: 115px;
@@ -1336,7 +1352,7 @@ header.masthead .masthead-subheading {
 .approach-item6 {
   font-size: 1rem;
   line-height: 153.3%;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #616161;
   text-align: left;
   margin-top: 5rem;
@@ -1382,7 +1398,7 @@ header.masthead .masthead-subheading {
   font-weight: 500;
   line-height: 1.8rem;
   margin-top: 88px;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #525252;
   text-align: center;
   margin-left: 10rem;
@@ -1395,10 +1411,15 @@ header.masthead .masthead-subheading {
   font-size: 1rem;
   line-height: 153.3%;
   margin-top: 88px;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #525252;
   text-align: left;
   max-width: 80%;
+}
+
+.sitemap-item1,
+.sitemap-item2 {
+  margin-top: 0 !important;
 }
 
 .final-design-item2 div:nth-child(1) {
@@ -1410,7 +1431,13 @@ header.masthead .masthead-subheading {
   margin-top: 0;
 }
 
-.user-flow,
+.user-flow {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+}
+
 .sketch {
   max-width: 60rem;
   margin: 0 auto;
@@ -1450,7 +1477,7 @@ header.masthead .masthead-subheading {
   line-height: 1.8rem;
   letter-spacing: -1px;
   margin-top: 88px;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #525252;
   text-align: left;
   margin-left: 10rem;
@@ -1473,7 +1500,7 @@ header.masthead .masthead-subheading {
   font-weight: 500;
   line-height: 1.8rem;
   letter-spacing: -1px;
-  font-family: 'Spectral';
+  font-family: 'Spectral', sans-serif;
   color: #525252;
   text-align: left;
   margin-left: 10rem;
@@ -1482,72 +1509,65 @@ header.masthead .masthead-subheading {
 .prototype-item4 {
   font-size: 1rem;
   line-height: 153.3%;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
   color: #616161;
   text-align: left;
   max-width: 80%;
 }
 
-footer.foothead {
-  padding-top: 10rem;
-  padding-bottom: 2rem;
-  text-align: left;
-  max-width: 30rem;
-  margin-left: auto;
-  margin-right: 0;
+/*--footer-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#mainFooter {
+  background-color: #fff;
+  height: 10rem;
 }
-
-.foothead > .container {
-  height: 20rem;
+#mainFooter .container {
+  height: 100%;
 }
-
-.next-grid {
-  display: grid;
-
-  width: 25rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.next-item1 {
-  font-family: 'Spectral';
-  color: #9f9f9f;
-  font-size: 1.3rem;
-  font-weight: bold;
-  grid-column: 1 / 1;
-  grid-row: 1;
-  padding-top: 8rem;
-}
-
-.next-item2 {
-  font-family: 'Spectral';
-  color: #9f9f9f;
-  font-size: 0.7rem;
-  grid-column: 1;
-  grid-row: 2 / 2;
-}
-
-.next-item3 {
-  color: #3f3f3f;
-  grid-column: 2 / 4;
-  grid-row: 2 / 1;
-  transform: rotate(-90deg);
-  text-align: left;
-  height: 2rem;
-  width: 11.7rem;
-  padding-right: 9rem;
-  padding-bottom: 10rem;
-}
-
-.next-a {
-  color: #9f9f9f;
-  text-decoration: none;
-  display: inline-block;
+.footer-wrapper {
+  position: relative;
   width: 100%;
+  height: 100%;
 }
-
-.next-grid *:hover {
-  text-decoration: underline;
+.left-btn {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 65px;
+  left: 5%;
+  border-bottom: #000000 1px solid;
+}
+.right-btn {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 65px;
+  right: 5%;
+  border-bottom: #000000 1px solid;
+}
+.btn-text {
+  font-size: 12px;
+  font-family: 'Spectral', sans-serif, serif;
+  line-height: 11px;
+  letter-spacing: -1px;
+  color: #1f1f1f;
+  font-style: italic;
+  font-weight: 500;
+  width: 50%;
+  margin: auto;
+}
+.btn-text span {
+  font-size: 25px;
+  font-family: 'Spectral', sans-serif, serif;
+  line-height: 35px;
+  letter-spacing: -1px;
+  color: #1f1f1f;
+  font-style: italic;
+  font-weight: 500;
+  width: 50%;
+}
+.footer-wrapper a {
+  height: 100%;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -1573,13 +1593,21 @@ footer.foothead {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1749px) {
   .approach-item2 {
     font-size: 16px;
   }
 
   .approach-item5 {
     margin-left: 100px;
+  }
+
+  header.masthead .masthead-subheading {
+    margin-left: 5rem;
+  }
+
+  .heading-grid {
+    margin-left: 5rem;
   }
 }
 
