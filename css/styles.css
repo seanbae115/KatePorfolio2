@@ -1411,7 +1411,7 @@ a {
     width: 41rem;
   }
   .insomnia-item2 {
-    top: -93px;
+    top: -93px !important;
     right: 42px;
     width: 200%;
   }
@@ -1421,9 +1421,13 @@ a {
   }
   
 }
-@media (max-width:1950px){
+@media (max-width:1951px){
   .buttons {
-    
     margin-right: 15rem;
+  }
+  .insomnia-item2 {
+    top: -110px;
+    right: 42px;
+  
   }
 }
