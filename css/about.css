@@ -1248,13 +1248,15 @@ header.masthead {
 
 @media (min-width: 1749px) {
   .connect-item1 img {
-    width: 50%;
-    margin-left: 17rem;
-    margin-top: 5rem;
+    width: 70%;
+    margin-left: 12rem;
+    margin-top: -2rem;
+
   }
   .connect-item2 {
     padding-top: 150px;
     width: 40%;
+    margin-left: 6rem;
   }
   .button {
     margin-bottom: 50px;
