@@ -1415,6 +1415,10 @@ a {
     right: 42px;
     width: 200%;
   }
+  .buttons {
+    
+    margin-right: 5rem !important;
+  }
   
 }
 @media (max-width:1950px){
